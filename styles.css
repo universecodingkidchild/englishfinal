@@ -109,6 +109,16 @@ em{color:var(--bone)}
 .deck-nav button:hover{border-color:var(--ember);color:var(--ember)}
 .deck-nav button:disabled{opacity:.3;cursor:default;border-color:var(--line)}
 
+/* ---- sources ---- */
+.sources{list-style:none;margin-top:44px;border-top:1px solid var(--line)}
+.sources li{display:grid;grid-template-columns:42px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.sources .s-num{font-family:"Instrument Serif",serif;font-size:1.25rem;color:var(--line-strong)}
+.sources .s-body{max-width:74ch}
+.sources .s-title{color:var(--bone)}
+.sources .s-pub{color:var(--bone-soft)}
+.sources a{display:inline-block;margin-top:4px;color:var(--ember);font-size:.85rem;text-decoration:none;border-bottom:1px solid transparent;word-break:break-word;transition:border-color .3s}
+.sources a:hover{border-color:var(--ember)}
+
 @media(prefers-reduced-motion:reduce){
   *,.r,.reveal-lines .line>span,.view.on{transition:none!important;animation:none!important}
   .r{opacity:1;transform:none}.reveal-lines .line>span{transform:none}

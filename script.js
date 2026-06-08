@@ -1,5 +1,5 @@
-const order = ['intro', 'gather', 'build', 'share'];
-const labels = { intro: 'Intro', gather: 'Gather', build: 'Build', share: 'Share' };
+const order = ['intro', 'gather', 'build', 'share', 'sources'];
+const labels = { intro: 'Intro', gather: 'Gather', build: 'Build', share: 'Share', sources: 'Sources' };
 const views = [...document.querySelectorAll('.view')];
 const links = [...document.querySelectorAll('nav a')];
 const progress = document.getElementById('progress');
@@ -7,6 +7,8 @@ const deckNum = document.getElementById('deckNum');
 const deckLabel = document.getElementById('deckLabel');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
+const deckTotal = document.getElementById('deckTotal');
+if (deckTotal) deckTotal.textContent = String(order.length).padStart(2, '0');
 
 // reveal elements as they enter the viewport
 const io = new IntersectionObserver((entries) => {
